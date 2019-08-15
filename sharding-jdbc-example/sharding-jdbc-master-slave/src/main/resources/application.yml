@@ -1,7 +1,9 @@
 server:
   port: 8085
 mybatis:
-  config-location: "classpath:META-INF/mybatis-config.xml"
+#  config-location: "classpath:META-INF/mybatis-config.xml"
+  mapper-locations: classpath:META-INF/mappers/**/*.xml
+  type-aliases-package: com.forezp.shardingjdbcmasterslave.entity
 
 sharding:
   jdbc:

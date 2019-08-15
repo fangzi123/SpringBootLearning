@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.forezp.shardingjdbcmasterslave.repository.UserRepository">
     
-    <resultMap id="baseResultMap" type="com.forezp.shardingjdbcmasterslave.entity.User">
+    <resultMap id="baseResultMap" type="User">
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="password" property="password" jdbcType="VARCHAR" />
