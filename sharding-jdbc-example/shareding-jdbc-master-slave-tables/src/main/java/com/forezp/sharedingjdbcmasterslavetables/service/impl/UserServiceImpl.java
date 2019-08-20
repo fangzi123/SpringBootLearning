@@ -4,6 +4,7 @@ package com.forezp.sharedingjdbcmasterslavetables.service.impl;
 import com.forezp.sharedingjdbcmasterslavetables.entity.User;
 import com.forezp.sharedingjdbcmasterslavetables.repository.UserRepository;
 import com.forezp.sharedingjdbcmasterslavetables.service.UserService;
+import io.shardingsphere.api.HintManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,6 @@ public class UserServiceImpl  implements UserService {
 
     @Override
     public List<User> list() {
-
         return userRepository.list();
     }
 }

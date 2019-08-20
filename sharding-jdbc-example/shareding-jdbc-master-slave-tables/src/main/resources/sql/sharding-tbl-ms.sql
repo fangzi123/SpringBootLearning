@@ -21,7 +21,7 @@ USE `cool2`;
 DROP TABLE IF EXISTS `role`;
 
 CREATE TABLE `role` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `id` bigInt(12) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
@@ -30,48 +30,48 @@ CREATE TABLE `role` (
 DROP TABLE IF EXISTS `user_0`;
 
 CREATE TABLE `user_0` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `id` bigInt(12) NOT NULL AUTO_INCREMENT,
   `username` varchar(12) NOT NULL,
   `password` varchar(30) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx-username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=149 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 /*Table structure for table `user_1` */
 
 DROP TABLE IF EXISTS `user_1`;
 
 CREATE TABLE `user_1` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `id` bigInt(12) NOT NULL AUTO_INCREMENT,
   `username` varchar(12) NOT NULL,
   `password` varchar(30) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx-username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=150 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 /*Table structure for table `user_2` */
 
 DROP TABLE IF EXISTS `user_2`;
 
 CREATE TABLE `user_2` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `id` bigInt(12) NOT NULL AUTO_INCREMENT,
   `username` varchar(12) NOT NULL,
   `password` varchar(30) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx-username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=147 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 /*Table structure for table `user_3` */
 
 DROP TABLE IF EXISTS `user_3`;
 
 CREATE TABLE `user_3` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `id` bigInt(12) NOT NULL AUTO_INCREMENT,
   `username` varchar(12) NOT NULL,
   `password` varchar(30) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx-username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=148 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

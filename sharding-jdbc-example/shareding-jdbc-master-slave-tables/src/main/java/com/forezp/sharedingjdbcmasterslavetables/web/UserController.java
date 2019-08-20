@@ -3,6 +3,7 @@ package com.forezp.sharedingjdbcmasterslavetables.web;
 
 import com.forezp.sharedingjdbcmasterslavetables.entity.User;
 import com.forezp.sharedingjdbcmasterslavetables.service.UserService;
+import io.shardingsphere.core.keygen.DefaultKeyGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private DefaultKeyGenerator defaultKeyGenerator;
 
     @GetMapping("/users")
     public Object list() {
@@ -26,8 +29,10 @@ public class UserController {
     public Object add() {
 
         for(int i=100;i<150;i++) {
+
             User user = new User();
-            user.setId(i);
+//            user.setId(defaultKeyGenerator.generateKey().longValue());
+            user.setId((long) i);
             user.setUsername("forezp"+(i));
             user.setPassword("1233edwd");
            long resutl=   userService.addUser(user);
